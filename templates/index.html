@@ -1,0 +1,67 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniCalc Web</title>
+    <link rel="stylesheet" href="../static/style.css"">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="topbar">
+            <div class="title">MiniCalc</div>
+            <button class="close-btn" id="minimizeBtn">_</button>
+            <button class="close-btn" id="closeBtn">X</button>
+        </div>
+        
+        <div class="display" id="display"></div>
+        
+        <div class="btn-frame">
+            <div class="btn-row">
+                <button class="calc-btn number">7</button>
+                <button class="calc-btn number">8</button>
+                <button class="calc-btn number">9</button>
+                <button class="calc-btn operator">÷</button>
+            </div>
+            
+            <div class="btn-row">
+                <button class="calc-btn number">4</button>
+                <button class="calc-btn number">5</button>
+                <button class="calc-btn number">6</button>
+                <button class="calc-btn operator">×</button>
+            </div>
+            
+            <div class="btn-row">
+                <button class="calc-btn number">1</button>
+                <button class="calc-btn number">2</button>
+                <button class="calc-btn number">3</button>
+                <button class="calc-btn operator">−</button>
+            </div>
+            
+            <div class="btn-row">
+                <button class="calc-btn number">0</button>
+                <button class="calc-btn number">00</button>
+                <button class="calc-btn number">.</button>
+                <button class="calc-btn operator">+</button>
+            </div>
+            
+            <div class="btn-row">
+                <button class="calc-btn clear">C</button>
+                <button class="calc-btn equals">=</button>
+                <button class="calc-btn convert">Bin</button>
+                <button class="calc-btn convert">Dec</button>
+            </div>
+            
+            <div class="btn-row">
+                <button class="calc-btn convert">Oct</button>
+                <button class="calc-btn convert">Hex</button>
+                <button class="calc-btn disabled"></button>
+                <button class="calc-btn disabled"></button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../static/index.js"></script>
+</body>
+</html>

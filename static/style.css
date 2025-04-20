@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.calculator-container {
+    width: 240px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 1px solid #d1d5db;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6b7280;
+    height: 25px;
+    padding: 0 8px;
+    cursor: grab;
+}
+
+.title {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.close-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+#minimizeBtn {
+    background-color: #f59e0b;
+}
+
+.display {
+    height: 50px;
+    background-color: white;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    font-family: 'Consolas', monospace;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.btn-frame {
+    padding: 5px;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.calc-btn {
+    width: 50px;
+    height: 35px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.calc-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.number {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.operator {
+    background-color: #f97316;
+    color: white;
+}
+
+.clear, .equals, .convert {
+    background-color: #f97316;
+    color: white;
+}
+
+.disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* For larger screens and devices */
+@media (min-width: 768px) {
+    .calculator-container {
+        width: 280px;
+    }
+    
+    .calc-btn {
+        width: 60px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .display {
+        height: 60px;
+        font-size: 18px;
+    }
+}
